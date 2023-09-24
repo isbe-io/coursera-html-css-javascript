@@ -19,7 +19,7 @@
     top: 10px;
     right: 10px;
     padding: 5px 10px; /* Spacing inside title box */
-    background-color: gold; /* For example */
+    background-color: #FFD700; /* For example */
     border: 1px solid black;
 }
 
@@ -45,16 +45,16 @@
 
 /* Background and Text Colors */
 #chicken {
-    background-color: peachpuff;
+    background-color: #ffdab9;
     color: black; /* You can change this if needed */
 }
 
 #beef {
-    background-color: lightpink;
+    background-color: #ffb6c1;
     color: black;
 }
 
 #sushi {
-    background-color: lightcyan;
+    background-color: #E0FFFF;
     color: black;
 }
