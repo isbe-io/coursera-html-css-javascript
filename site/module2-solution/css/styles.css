@@ -1,14 +1,60 @@
-/* Styles for desktop (992px and above) */
-@media (min-width: 992px) {
-  
+/* Reset box-sizing for all elements */
+* {
+    box-sizing: border-box;
 }
 
-/* Styles for tablet (768px to 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
-  
+/* Style for the entire section */
+.section {
+    position: relative; /* So that the title can be positioned absolutely within it */
+    float: left; /* Makes the sections side by side */
+    width: 33.33%; /* Divide screen into 3 equal sections for desktop view */
+    border: 1px solid black;
+    padding: 20px; /* Spacing inside each section */
+    margin: 10px; /* Spacing between sections */
 }
 
-/* Styles for mobile (767px and below) */
+/* Style for the title of each section */
+.section-title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px; /* Spacing inside title box */
+    background-color: gold; /* For example */
+    border: 1px solid black;
+}
+
+/* Tablet View */
+@media (max-width: 991px) and (min-width: 768px) {
+    .section {
+        width: 50%; /* Divide screen into 2 equal sections for the first two */
+    }
+
+    #sushi {
+        width: 100%; /* Sushi section takes full width */
+        clear: both; /* Moves the section to the next row */
+    }
+}
+
+/* Mobile View */
 @media (max-width: 767px) {
-  
+    .section {
+        width: 100%; /* Each section takes full width */
+        float: none; /* Stacks sections vertically */
+    }
+}
+
+/* Background and Text Colors */
+#chicken {
+    background-color: peachpuff;
+    color: black; /* You can change this if needed */
+}
+
+#beef {
+    background-color: lightpink;
+    color: black;
+}
+
+#sushi {
+    background-color: lightcyan;
+    color: black;
 }
